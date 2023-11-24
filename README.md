@@ -4,10 +4,10 @@ Inform-a-Fish is a comprehensive online platform designed for anglers of all lev
 
 Features and Highlights:
 
-	•	User-Friendly Interface: Navigate effortlessly through our intuitive interface designed to enhance user experience.
-	•	Personalized Profiles: Create and manage your profile, showcasing your fishing experiences and interests.
-	•	Community Engagement: Connect and interact with fellow anglers, share tips, stories, and insights.
-	•	Resourceful Tools: Access a range of tools and resources to improve fishing skills, including weather updates, fishing hotspots, and gear recommendations.
+	• User-Friendly Interface: Navigate effortlessly through our intuitive interface designed to enhance user experience.
+	• Personalized Profiles: Create and manage your profile, showcasing your fishing experiences and interests.
+	• Community Engagement: Connect and interact with fellow anglers, share tips, stories, and insights.
+	• Resourceful Tools: Access a range of tools and resources to improve fishing skills, including weather updates, fishing hotspots, and gear recommendations.
 
 Website Link:
 
