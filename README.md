@@ -9,6 +9,6 @@ Features and Highlights:
 	• Community Engagement: Connect and interact with fellow anglers, share tips, stories, and insights.
 	• Resourceful Tools: Access a range of tools and resources to improve fishing skills, including weather updates, fishing hotspots, and gear recommendations.
 
-Website Link:
+Website Link: https://artemis.cs.csub.edu/~sdenney/inform_a_fish/login.php
 
 Explore the Inform-a-Fish website: Inform-a-Fish - Fishing Community
