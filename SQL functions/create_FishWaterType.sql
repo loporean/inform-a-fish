@@ -1,0 +1,9 @@
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Spotted bass", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Smallmouth bass", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Largemouth bass", "Fresh/Salt");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Blue Catfish", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Black Crappie", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("White Crappie", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Rainbow trout", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Lake trout", "Fresh");
+INSERT INTO FishWaterType (FishName, WaterType) VALUES ("Pink salmon", "Fresh/Salt");

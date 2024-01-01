@@ -1,0 +1,10 @@
+INSERT INTO FishermanType (Username, Type) VALUES ("abarhems3", "bass");
+INSERT INTO FishermanType (Username, Type) VALUES ("ctrainer4", "fly");
+INSERT INTO FishermanType (Username, Type) VALUES ("esimmell7", "spear");
+INSERT INTO FishermanType (Username, Type) VALUES ("foscandall6", "bow");
+INSERT INTO FishermanType (Username, Type) VALUES ("ghannaby1", "bass");
+INSERT INTO FishermanType (Username, Type) VALUES ("jharrowsmith5", "fly");
+INSERT INTO FishermanType (Username, Type) VALUES ("jreitenbach9", "salt");
+INSERT INTO FishermanType (Username, Type) VALUES ("krodgier2", "cat");
+INSERT INTO FishermanType (Username, Type) VALUES ("nboylin8", "bow");
+INSERT INTO FishermanType (Username, Type) VALUES ("vpulford0", "fresh");

@@ -349,7 +349,54 @@ if (isset($_POST["submit"])) {
 
                         </div>
 
+    <style>
+        /* Modal styles */
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+        }
 
+        /* Modal content */
+        .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 5px;
+        }
+
+        /* Modal header */
+        .modal-header {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        }
+
+        /* Close button */
+        .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    </style>
 
     </table>
     </div>
