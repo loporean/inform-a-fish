@@ -1,6 +1,6 @@
-Inform-a-Fish: A Fishing Community Website for Every Angler
+Inform-A-Fish: A Fishing Community Website for Every Angler
 
-Inform-a-Fish is a comprehensive online platform designed for anglers of all levels, offering a community-centered space tailored to meet the needs of fishing enthusiasts. Whether you’re a seasoned professional or a novice angler, this platform is your go-to resource.
+Inform-A-Fish is a comprehensive online platform designed for anglers of all levels, offering a community-centered space tailored to meet the needs of fishing enthusiasts. Whether you’re a seasoned professional or a novice angler, this platform is your go-to resource.
 
 Features and Highlights:
 
