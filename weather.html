@@ -11,19 +11,36 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <style>
+
+      body {
+        padding-top: 20px;
+      }
+
+      .btn-group {
+        margin-bottom: 20px;
+      }
+
+      .card {
+        width: 12rem;
+        margin-bottom: 20px;
+      }
+
+    </style>
     <!-- <link rel="stylesheet" href="main.css" /> -->
   </head>
   <body>
-    <a href="index.php">Return</a><br>
-      
-    <div>
-      <header class="container">
-        
-        <h1>OpenWeatherMap.org API</h1>
+    <div class="container">
+      <a href="index.php">Return</a><br>
+
+      <header>
+        <h1 class="text-center">Location</h1>
       </header>
-      <nav class="container">
-        <div class="row align-items-center py-2">
-          <div class="input-group col-sm">
+
+      <!-- <nav class="container"> -->
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div class="btn-group">
             <span class="input-group-text" id="basic-addon1">Lat</span>
             <input
               type="text"
@@ -88,9 +105,10 @@
             </button>
           </div>
         </div>
-      </nav>
-      <main class="container">
-        <h2>Weather</h2>
+      </div>
+      <!-- </nav> -->
+      <main class="container" id="weatherPanel" style="display: none;">
+        <h2 class="text-center mt-4">Weather Forecast</h2>
         <!-- results for weather data -->
         <div class="weather row gx-2">
           <div class="col">
@@ -118,98 +136,58 @@
           </div>
         </div>
       </main>
-      <footer class="container">
-        <div class="row align-items-center">
-         OpenWeatherMap.org API
-        </div>
-      </footer>
     </div>
-    <!-- Lake Evans -->
-    <script>
-      document.getElementById("Evan")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 33.9963; 
-      document.getElementById('longitude').value = -117.3798;
-    });            
-    </script>
-    <!-- Castaic Lake //34.54002529418112, -118.58659586896806-->
-    <script>
-      document.getElementById("Castaic")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 34.5400; 
-      document.getElementById('longitude').value = -118.5865;
-    });            
-    </script>
-    <!-- Pyramid Lake 34.66510906402938, -118.78073436646082-->
-    <script>
-      document.getElementById("Pyramid")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 34.6651; 
-      document.getElementById('longitude').value = -118.7807;
-    });            
-    </script>
-    <!-- Quail Lake 34.77230592299931, -118.74733993248049-->
-    <script>
-      document.getElementById("Quail")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 34.7723; 
-      document.getElementById('longitude').value = -118.7473;
-    });            
-    </script>
-    <!-- Lake Isabella 35.67596423437628, -118.44237073027557-->
-    <script>
-      document.getElementById("Isabella")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 35.6759; 
-      document.getElementById('longitude').value = -118.4423;
-    });            
-    </script>
-    <!-- California Aqueduct -->
-   <!--  <script>
-      document.getElementById("Aquaduct")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 33.9963; 
-      document.getElementById('longitude').value = -117.3798;
-    });            
-    </script> -->
-    <!-- San Luis Ressivor 37.058784408727846, -121.1075122432868-->
-    <script>
-      document.getElementById("Luis")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 37.0587; 
-      document.getElementById('longitude').value = -121.1075;
-    });            
-    </script>
-    <!-- Oneill Forebay 37.088066612619784, -121.05155967904625-->
-    <script>
-      document.getElementById("Oneill")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 37.0880; 
-      document.getElementById('longitude').value = -121.0515;
-    });            
-    </script>
-    <!-- Lake Webb 35.22341081035475, -119.26267989095174-->
-    <script>
-      document.getElementById("Webb")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 35.2234; 
-      document.getElementById('longitude').value = -119.2626;
-    });            
-    </script>
-    <!-- Lake Ming 35.43953241162366, -118.86657287689451-->
-        <script>
-      document.getElementById("Ming")
-      .addEventListener("click", () => {
-      document.getElementById('latitude').value = 35.4395; 
-      document.getElementById('longitude').value = -118.8665;
-    });            
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
     
+    <script>
+
+    // Function to show the weather panel
+    function showWeatherPanel() {
+      document.getElementById('weatherPanel').style.display = 'block';
+    }
+
+    // Function to handle Get Weather button click
+    document.getElementById('btnGet').addEventListener('click', function() {
+      const latitude = parseFloat(document.getElementById('latitude').value);
+      const longitude = parseFloat(document.getElementById('longitude').value);
+
+      if (!isNaN(latitude) && !isNaN(longitude)) {
+        // Fetch weather data using latitude and longitude (Implement weather API call here)
+
+        // For demonstration, displaying the weather panel after a delay
+        setTimeout(showWeatherPanel, 2000); // Replace this with your weather fetching logic
+      } else {
+        alert('Please enter valid latitude and longitude values.');
+      }
+    });
+
+      // Coordinates for the bodies of water
+      const coordinates = {
+        Evan: { latitude: 33.9963, longitude: -117.3798 },
+        Castaic: { latitude: 34.5400, longitude: -118.5866 },
+        Pyramid: { latitude: 34.6651, longitude: -118.7807 },
+        Quail: { latitude: 34.7723, longitude: -118.7473 },
+        Isabella: { latitude: 35.6759, longitude: -118.4424 },
+        Luis: { latitude: 37.0588, longitude: -121.1075 },
+        Oneill: { latitude: 37.0881, longitude: -121.0516 },
+        Webb: { latitude: 35.2234, longitude: -119.2627 },
+        Ming: { latitude: 35.4395, longitude: -118.8666 }
+        // Add more coordinates as needed
+      };
+
+      // Function to handle button clicks
+      function handleButtonClick(event) {
+        const location = event.target.id;
+        document.getElementById('latitude').value = coordinates[location].latitude;
+        document.getElementById('longitude').value = coordinates[location].longitude;
+      }
+
+      // Add click event listeners to buttons
+      const buttons = document.querySelectorAll(".btn-info");
+      buttons.forEach(button => {
+        button.addEventListener("click", handleButtonClick);
+      });
+    </script>
+
     <script src="weather.js" defer></script>
   </body>
 </html>
