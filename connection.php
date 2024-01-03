@@ -1,9 +1,9 @@
 <?php
 session_start();
-	$dbhost = "localhost";
-	$dbuser = "sdenney";
-	$dbpass = "kzov52Girm";
-	$dbname = "inform_a_fish";
+	$dbhost = "";
+	$dbuser = "";
+	$dbpass = "";
+	$dbname = "";
 	$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 	if(!$con)
 	{
