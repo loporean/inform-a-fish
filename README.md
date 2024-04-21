@@ -33,4 +33,4 @@ This project is not licensed.
 
 ## Explore the Inform-a-Fish Website
 
-[![Inform-a-Fish - Fishing Community](https://example.com)](https://example.com)
+Visit the [Inform-A-Fish website](https://artemis.cs.csub.edu/~sdenney/inform_a_fish/login.php) to start exploring!
